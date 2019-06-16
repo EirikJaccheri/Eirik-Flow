@@ -101,7 +101,7 @@ def train(wArr,bVec,shapeArr,N):
                 wNabla, bNabla = zeroNabla(shapeArr)
         count += 1
 
-        if count == N:
+        if count == n:
             trained = True
 
 shapeArr = [picSize,16,16,10]
