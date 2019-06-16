@@ -101,12 +101,12 @@ def train(wArr,bVec,shapeArr,N):
                 wNabla, bNabla = zeroNabla(shapeArr)
         count += 1
 
-        if count == n:
+        if count == N:
             trained = True
 
 shapeArr = [picSize,16,16,10]
 wArr, bVec = randWeights(shapeArr)
-train(wArr,bVec,shapeArr,1)
+train(wArr,bVec,shapeArr,20)
 save(wArr,bVec)
 print(test(wArr,bVec))
 
