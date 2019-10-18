@@ -106,7 +106,7 @@ def train(wArr,bVec,shapeArr,N):
 
 shapeArr = [picSize,16,16,10]
 wArr, bVec = randWeights(shapeArr)
-train(wArr,bVec,shapeArr,1)
+train(wArr,bVec,shapeArr,10)
 save(wArr,bVec)
 print(test(wArr,bVec))
 
